@@ -15,13 +15,20 @@
 <!--radio buttons are used for mcq type questions,
     add an input with type as radio and name the radio at the end of input field-->
 <!--label element are used to help associate the text for an input element with the input element itself -->
+<!--id attribute is used to identify specific html elements-->
+<!--ids must be unique-->
 <html>
     <body>
         <h1> A Website</h1>
         <h2>About nothing in particular</h2>
         <p>Do you ever think about nothing?</p>
         <form action="x.url">
-            <label></label><input type = "radio"> Indoor</label>
+            <label><input type="radio" id = "indoor"name="i-o"> Indoor</label>
+            <label><input id="outdoor" type="radio" name="i-o"> Outdoor</label>
+            <!--Here these two radio buttons, each is one option, 
+                they can be selected at the same time, 
+                to resolve add name attribute with the same value for both-->
+            <!--Also add value attribute with the same value as id, to send the data to form-->
             <input type="text" name = "email" placeholder="E-mail id" required>
             <button type="submit">Send</button>
 

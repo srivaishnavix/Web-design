@@ -1,0 +1,28 @@
+<!--Fieldset- used to group related elements and labels together in a web form
+They are block-level elements, appear on new line-->
+<!--Legend- caption for the content in fieldset-->
+<!-- Forms use check boxes for msq, multiple options questions-->
+<html>
+    <body>
+        <h1> A Website</h1>
+        <h2>About nothing in particular</h2>
+        <p>Do you ever think about nothing?</p>
+        <form action="x.url">
+            <fieldset>
+                <legend>Are you entering a personal mail id or official mail id?</legend>
+                <label><input type="radio" value = "personal" id = "personal"name="p-o"> Indoor</label>
+                <label><input id="official" value = "official" type="radio" name="p-o"> Outdoor</label>
+            </fieldset>
+            <fieldset>
+                <input type="checkbox"id="electronics">Electronics
+                <input type="checkbox"id="sports">Sports
+                <input type="checkbox"id="literature">Literature
+                <input type="checkbox"id="aviation">Aviation
+            </fieldset>
+            <input type="text" name = "email" placeholder="E-mail id" required>
+            <button type="submit">Send</button>
+
+        </form>
+        
+    </body>
+</html>
