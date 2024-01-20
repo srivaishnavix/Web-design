@@ -12,12 +12,16 @@
 <!-- form button without attributes will send it to the action location, but it will confuse-->
 <!--so adding a type with submit, will clear it-->
 <!-- input and button elements are inline elements, so they appear right next to each other-->
+<!--radio buttons are used for mcq type questions,
+    add an input with type as radio and name the radio at the end of input field-->
+<!--label element are used to help associate the text for an input element with the input element itself -->
 <html>
     <body>
         <h1> A Website</h1>
         <h2>About nothing in particular</h2>
         <p>Do you ever think about nothing?</p>
         <form action="x.url">
+            <label></label><input type = "radio"> Indoor</label>
             <input type="text" name = "email" placeholder="E-mail id" required>
             <button type="submit">Send</button>
 
