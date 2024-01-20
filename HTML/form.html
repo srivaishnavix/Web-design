@@ -2,14 +2,25 @@
 <!--action attribute- has the url to where the collected form data should be sent-->
 <!--input tag- self closing tags, collects different data from web form-->
 <!--type attribute- password field, reset button, option to upload a file-->
-<!--type text value collects text-->
+<!--type "text" value collects text-->
+<!--We need a name for texfield to be accessed by the location in access in form-->
+<!--name attribute- is used for the above reason-->
+<!--placeholder attribute- hint about what information to enter-->
+<!--Required attribute- To prevent a user submitting form when required information is missing-->
+<!--required has no value, so just required attribute with no spaces from other attributes-->
+<!--button tag- element to click a button with a text-->
+<!-- form button without attributes will send it to the action location, but it will confuse-->
+<!--so adding a type with submit, will clear it-->
+<!-- input and button elements are inline elements, so they appear right next to each other-->
 <html>
     <body>
         <h1> A Website</h1>
         <h2>About nothing in particular</h2>
         <p>Do you ever think about nothing?</p>
         <form action="x.url">
-            <input type="text">
+            <input type="text" name = "email" placeholder="E-mail id" required>
+            <button type="submit">Send</button>
+
         </form>
         
     </body>
