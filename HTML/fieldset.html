@@ -13,11 +13,14 @@ They are block-level elements, appear on new line-->
                 <label><input type="radio" value = "personal" id = "personal"name="p-o"> Indoor</label>
                 <label><input id="official" value = "official" type="radio" name="p-o"> Outdoor</label>
             </fieldset>
+            <!--Like radio buttons, form data for selected checkboxes are name / value attribute pairs. 
+                While the value attribute is optional, 
+                it's best practice to include it with any checkboxes or radio buttons on the page.-->
             <fieldset>
-                <input type="checkbox"id="electronics">Electronics
-                <input type="checkbox"id="sports">Sports
-                <input type="checkbox"id="literature">Literature
-                <input type="checkbox"id="aviation">Aviation
+                <input type="checkbox"id="electronics" name="interest"><label for="electronics">Electronics</label>
+                <input type="checkbox"id="sports" name="interest"><label for="sports">Sports</label>
+                <input type="checkbox"id="literature"name="interest"><label for="literature">Literature</label>
+                <input type="checkbox"id="aviation" name="interest"><label for="aviation">Aviation</label>
             </fieldset>
             <input type="text" name = "email" placeholder="E-mail id" required>
             <button type="submit">Send</button>
