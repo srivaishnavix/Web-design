@@ -2,6 +2,8 @@
 They are block-level elements, appear on new line-->
 <!--Legend- caption for the content in fieldset-->
 <!-- Forms use check boxes for msq, multiple options questions-->
+<!--to have default option checked/selected in radio buttons or checkboxes
+we need to have checked attribute in input element-->
 <html>
     <body>
         <h1> A Website</h1>
@@ -10,14 +12,14 @@ They are block-level elements, appear on new line-->
         <form action="x.url">
             <fieldset>
                 <legend>Are you entering a personal mail id or official mail id?</legend>
-                <label><input type="radio" value = "personal" id = "personal"name="p-o"> Indoor</label>
+                <label><input checked type="radio" value = "personal" id = "personal"name="p-o"> Indoor</label>
                 <label><input id="official" value = "official" type="radio" name="p-o"> Outdoor</label>
             </fieldset>
             <!--Like radio buttons, form data for selected checkboxes are name / value attribute pairs. 
                 While the value attribute is optional, 
                 it's best practice to include it with any checkboxes or radio buttons on the page.-->
             <fieldset>
-                <input type="checkbox"id="electronics" name="interest"><label for="electronics">Electronics</label>
+                <input checked type="checkbox"id="electronics" name="interest"><label for="electronics">Electronics</label>
                 <input type="checkbox"id="sports" name="interest"><label for="sports">Sports</label>
                 <input type="checkbox"id="literature"name="interest"><label for="literature">Literature</label>
                 <input type="checkbox"id="aviation" name="interest"><label for="aviation">Aviation</label>
