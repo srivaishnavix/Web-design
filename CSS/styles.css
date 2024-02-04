@@ -1,5 +1,9 @@
 /* No style tag needed */
-/* Rewriting the previous styles */
+/* 16-Rewriting the previous styles */
+/* 18-Background colour to brown */
 h1, h2, p{
     text-align: center;
+}
+body{
+    background-color: brown;
 }
