@@ -11,13 +11,16 @@ to comment shortcut [cmd+/] */
 /* 23-In #menu selector set bg color of div to burlywood */
 /* 24-RN, the menu element width is in pixels, change it to 80% of the width of parent(body) */
 /* 25-To center the menu horizontally, by setting margin-left and margin-right to auto */
+/* 26-ID selector is one type of selector, and class selctor is another type of selector 
+A class selector is defined by a name with a dot in fornt of it
+Change menu to class selector by replacing # with .*/
 h1, h2, p{
     text-align: center;
 }
 body{
     /* background-color: brown;  */
 }
-#menu{
+.menu{
     width: 80%;
     background-color: burlywood;
     margin-left: auto;
