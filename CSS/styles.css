@@ -13,7 +13,10 @@ to comment shortcut [cmd+/] */
 /* 25-To center the menu horizontally, by setting margin-left and margin-right to auto */
 /* 26-ID selector is one type of selector, and class selctor is another type of selector 
 A class selector is defined by a name with a dot in fornt of it
-Change menu to class selector by replacing # with .*/
+Change menu to class selector by replacing # with .
+Class selectors are more common to style elements*/
+/* 28-background-image for body to set a background image
+background-image: url(https://url.com); */
 h1, h2, p{
     text-align: center;
 }
@@ -25,4 +28,10 @@ body{
     background-color: burlywood;
     margin-left: auto;
     margin-right: auto;
+}
+.flavor{
+    text-align: left;
+}
+.price{
+    text-align: right;
 }
