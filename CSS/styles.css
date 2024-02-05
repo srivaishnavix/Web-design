@@ -6,11 +6,13 @@
         we can use id selector for targeting a specific div element
         id selector is defined by placing hash symbol in front of element id
         ex: if id = cat, #cat{width:250px;} is used*/
+/* 22-comments in CSS- forward slash ,asterisk, comment, asterisk, forward slash 
+to comment shortcut [cmd+/] */
 h1, h2, p{
     text-align: center;
 }
 body{
-    background-color: brown;
+    /* background-color: brown;  */
 }
 #menu{
     width: 300px;
