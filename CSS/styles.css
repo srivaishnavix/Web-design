@@ -2,9 +2,16 @@
 /* 16-Rewriting the previous styles */
 /* 18-Change Background colour of body element to brown */
 /* 19-Background colour to Burlywood, better readability*/
+/* 21-width property for the div to not take up entire width of page
+        we can use id selector for targeting a specific div element
+        id selector is defined by placing hash symbol in front of element id
+        ex: if id = cat, #cat{width:250px;} is used*/
 h1, h2, p{
     text-align: center;
 }
 body{
     background-color: brown;
+}
+#menu{
+    width: 300px;
 }
