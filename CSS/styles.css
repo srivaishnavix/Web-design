@@ -17,12 +17,21 @@ Change menu to class selector by replacing # with .
 Class selectors are more common to style elements*/
 /* 28-background-image for body to set a background image
 background-image: url(https://url.com); */
+/* 33-Use flavor class as a selector, set the text-align property's value to left. */
+/* 35-Now align the text to the right for the elements with the price class. */
+/* 36-Though they are arranged left and right, they are not on the same line, so we need them on same line, since p level element are block level elements-they take entire width of their parent
+So we need to do styling to p for turning it into block level to inline element
+Add class attribute to the article with the value item */
+/* 37-To style the p elements inside the article with class name-item,have the selector as .item p{}
+And have property display with value inline-block;  */
+
 h1, h2, p{
     text-align: center;
 }
+/* 
 body{
-    /* background-color: brown;  */
-}
+    background-color: brown;  
+}*/
 .menu{
     width: 80%;
     background-color: burlywood;
@@ -34,4 +43,7 @@ body{
 }
 .price{
     text-align: right;
+}
+.item p{
+    display: inline-block;
 }
