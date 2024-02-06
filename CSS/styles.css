@@ -24,6 +24,14 @@ So we need to do styling to p for turning it into block level to inline element
 Add class attribute to the article with the value item */
 /* 37-To style the p elements inside the article with class name-item,have the selector as .item p{}
 And have property display with value inline-block;  */
+/* 38-That's closer, but the price didn't stay over on the right. 
+This is because inline-block elements only take up the width of their content. To spread them out, 
+add a width property to the flavor and price class selectors that have a value of 50% each. */
+/* 39-Styling the p elements as inline-block and placing them on separate lines 
+in the code creates an extra space to the right of the first p element, 
+causing the second one to shift to the next line.
+So changing it to less than 50- so 49% works */
+/* 41-Now go ahead and change both the flavor and price class' widths to be 50% again. */
 
 h1, h2, p{
     text-align: center;
@@ -40,9 +48,11 @@ body{
 }
 .flavor{
     text-align: left;
+    width:50%;
 }
 .price{
     text-align: right;
+    width:50%;
 }
 .item p{
     display: inline-block;
