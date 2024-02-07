@@ -38,6 +38,8 @@ wrapping around to the next line. This is because the width of the p elements
 on the left side can only take up 50% of the space.
 Increase flavor width to 75% and decrease width of price to 25%
  */
+ /* 51- Define the selector for the dessert class, 
+ as price class and flavour class exists from Coffe section but not Dessert class */
 
 h1, h2, p{
     text-align: center;
@@ -52,7 +54,7 @@ body{
     margin-left: auto;
     margin-right: auto;
 }
-.flavor{
+.flavor, .dessert{
     text-align: left;
     width:75%;
 }
@@ -63,3 +65,8 @@ body{
 .item p{
     display: inline-block;
 }
+/* .dessert{
+    text-align: left;
+    width:75%;
+} 
+You can do this or seperate it by comma with the flavour class*/
