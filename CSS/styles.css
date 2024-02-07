@@ -40,6 +40,10 @@ Increase flavor width to 75% and decrease width of price to 25%
  */
  /* 51- Define the selector for the dessert class, 
  as price class and flavour class exists from Coffe section but not Dessert class */
+ /* 53- You can add some space between the parent edges and the menu content by using padding properties
+ Give the menu class a padding-left and a padding-right with the same value 20px. 
+ so much better*/
+ /* 54- Now same 20px padding to top and bottom */
 
 h1, h2, p{
     text-align: center;
@@ -53,6 +57,10 @@ body{
     background-color: burlywood;
     margin-left: auto;
     margin-right: auto;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 .flavor, .dessert{
     text-align: left;
