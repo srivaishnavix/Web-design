@@ -32,7 +32,12 @@ in the code creates an extra space to the right of the first p element,
 causing the second one to shift to the next line.
 So changing it to less than 50- so 49% works */
 /* 41-Now go ahead and change both the flavor and price class' widths to be 50% again. */
-/* 42 */
+/* 45- If you make the width of the page preview smaller, 
+you will notice at some point, some of the text on the left starts 
+wrapping around to the next line. This is because the width of the p elements 
+on the left side can only take up 50% of the space.
+Increase flavor width to 75% and decrease width of price to 25%
+ */
 
 h1, h2, p{
     text-align: center;
@@ -49,11 +54,11 @@ body{
 }
 .flavor{
     text-align: left;
-    width:50%;
+    width:75%;
 }
 .price{
     text-align: right;
-    width:50%;
+    width:25%;
 }
 .item p{
     display: inline-block;
