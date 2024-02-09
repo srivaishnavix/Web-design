@@ -59,11 +59,19 @@ Fallbacks are used in instances where the initial is not found/available.
 Add the fallback font serif after the Impact font. */
 /* 60-Make the Est. 2020 text italicized by creating an established class selector and giving 
 it the font-style property with the value italic. */
+/* 62- To customize the font size of h1 and h2 seperately(as they have a clubbed selector for font
+create two new seperate selectors with font size of 40 px and 30 px for h1 and h2 respectively */
 h1, h2, p{
     text-align: center;
 }
 h1,h2{
     font-family: Impact,serif;
+}
+h1{
+    font-size: 40px;
+}
+h2{
+    font-size: 30px;
 }
 
 body{
