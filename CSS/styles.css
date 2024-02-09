@@ -46,14 +46,31 @@ Increase flavor width to 75% and decrease width of price to 25%
  /* 54- Now same 20px padding to top and bottom */
  /* 55- You can use a single line to add padding on all 4 sides, if the padding value is same
  Use the single padding property and delete other 4 lines */
+ /* 56-Current width of menu will take 80% of the body, when the screen is too wide, the item and price are too far apart,
+ So, we can use a max width to set a maximum width of 500px in menu */
+ /* 57-Fontfamily of text can be changed to have different font from the browser default font.
+ Few common fonts are available to the browser
+ set the body font to sans-serif with font-family property */
+ /* 58- make just the h1 and h2 elements different using a different selector.
 
+Style both the h1 and the h2 elements using a single selector so that these elements' text use Impact font. */
+/* 59-You can add a fallback value for the font-family by adding another font name separated by a comma. 
+Fallbacks are used in instances where the initial is not found/available.
+Add the fallback font serif after the Impact font. */
+/* 60-Make the Est. 2020 text italicized by creating an established class selector and giving 
+it the font-style property with the value italic. */
 h1, h2, p{
     text-align: center;
 }
-/* 
+h1,h2{
+    font-family: Impact,serif;
+}
+
 body{
-    background-color: brown;  
-}*/
+    /* background-color: brown;  */
+    background-image: url(https://cdn.freecodecamp.org/curriculum/css-cafe/beans.jpg);
+    font-family: sans-serif; 
+}
 .menu{
     width: 80%;
     background-color: burlywood;
@@ -64,6 +81,7 @@ body{
     padding-right: 20px;
     padding-top: 20px;
     padding-bottom: 20px; */
+    max-width: 500px;
 }
 .flavor, .dessert{
     text-align: left;
@@ -75,6 +93,9 @@ body{
 }
 .item p{
     display: inline-block;
+}
+.established{
+    font-style: italic;
 }
 /* .dessert{
     text-align: left;
