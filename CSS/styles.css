@@ -61,6 +61,12 @@ Add the fallback font serif after the Impact font. */
 it the font-style property with the value italic. */
 /* 62- To customize the font size of h1 and h2 seperately(as they have a clubbed selector for font
 create two new seperate selectors with font size of 40 px and 30 px for h1 and h2 respectively */
+/* 67- change the height property of hr element to 3px */
+/* 68- Change background color of the hr to bro, to match the coffee beans */
+/* 69- the edges of the hr is still grey,
+Those edges are known as borders. Each side of an element can have a different color or they can all be
+ the same. Make all the edges of the hr element the same color as the background of it using the 
+ border-color property. */
 h1, h2, p{
     text-align: center;
 }
@@ -104,6 +110,11 @@ body{
 }
 .established{
     font-style: italic;
+}
+hr{
+    height: 3px;
+    background-color: brown;
+    border-color:brown;
 }
 /* .dessert{
     text-align: left;
