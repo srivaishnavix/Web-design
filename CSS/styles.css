@@ -85,6 +85,22 @@ Change the height property of the hr to be 2px, so the total height of it become
  The default color of a link that has already been visited from a page is typically purple.
 To make the footer links the same color regardless if a link has been visited, 
 use a type selector for the anchor element (a) and use the value black for the color property. */
+/* 80-You change properties of a link when the link has actually been visited by using a pseudo-selector that looks like 
+a:visited { propertyName: propertyValue; }.
+Change the color of the footer Visit our website link to be grey when a user has visited the link. */
+/* 81- You change properties of a link when the mouse hovers over them by using a pseudo-selector that looks like 
+a:hover { propertyName: propertyValue; }.
+Change the color of the footer Visit our website link to be brown when a user hovers over it.*/
+/* 82-You change properties of a link when the link is actually being clicked by using a pseudo-selector that looks like 
+a:active { propertyName: propertyValue; }.
+Change the color of the footer Visit our website link to be white when clicked on. */
+/* 83- To keep with the same color theme you have already been using (black and brown), 
+change the color for when the link is visited to black and use brown for when the link is actually clicked. */
+/* 84-The menu text CAMPER CAFE has a different space from the top than the address's space at the bottom of the menu.
+ This is due to the browser having some default top margin for the h1 element.
+Change the top margin of the h1 element to 0 to remove all the top margin. */
+/* 85- To remove some of the vertical space between the h1 element and the text Est. 2020, 
+change the bottom margin of the h1 to 15px. */
 h1, h2, p{
     text-align: center;
 }
@@ -93,6 +109,8 @@ h1,h2{
 }
 h1{
     font-size: 40px;
+    margin:0;
+    margin-bottom: 15px;
 }
 h2{
     font-size: 30px;
@@ -153,4 +171,13 @@ footer{
 }
 a{
     color: black;
+}
+a:visited{
+    color: black;
+}
+a:hover{
+    color:brown;
+}
+a:active{
+    color:brown;
 }
