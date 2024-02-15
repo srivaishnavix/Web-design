@@ -67,6 +67,24 @@ create two new seperate selectors with font size of 40 px and 30 px for h1 and h
 Those edges are known as borders. Each side of an element can have a different color or they can all be
  the same. Make all the edges of the hr element the same color as the background of it using the 
  border-color property. */
+/* 70-The default value of a property named border-width is 1px for all edges/borders of hr elements. 
+By changing the border to the same color as the background, 
+the total height of the line is 5px (3px plus the top and bottom border width of 1px).
+Change the height property of the hr to be 2px, so the total height of it becomes 4px. */
+/* 72-To create a little more room around the menu, add 20px of space on the inside of the body element
+ by using the padding property. */
+ /* 73- Too much line spacing for each menu item, using p selector with item class, set bottom and top margin to 5px */
+ /* 74-make the font size of the items and prices larger by using a value of 18px. */
+ /* 75- hr element and cinammon roll are too close compared to coffee heading and hr;
+ Add some more space by creating a class named bottom-line using 25px for the margin-top property.
+ */
+ /* 77-Next you are going to be styling the footer element. 
+ To keep the CSS organized, add a comment at the end of styles.css with the text FOOTER. */
+ /* 78- Moving down to the footer element, make all the text have a value of 14px for the font size. */
+ /* 79- The default color of a link that has not yet been clicked on is typically blue. 
+ The default color of a link that has already been visited from a page is typically purple.
+To make the footer links the same color regardless if a link has been visited, 
+use a type selector for the anchor element (a) and use the value black for the color property. */
 h1, h2, p{
     text-align: center;
 }
@@ -84,6 +102,8 @@ body{
     /* background-color: brown;  */
     background-image: url(https://cdn.freecodecamp.org/curriculum/css-cafe/beans.jpg);
     font-family: sans-serif; 
+    padding: 20px;
+    /* this padding created a space of 20 px on all sides of the burlywood menu, to view more cofee bean pic */
 }
 .menu{
     width: 80%;
@@ -101,23 +121,36 @@ body{
     text-align: left;
     width:75%;
 }
+/* .dessert{
+    text-align: left;
+    width:75%;
+} 
+You can do this or seperate it by comma with the flavour class*/
 .price{
     text-align: right;
     width:25%;
 }
 .item p{
     display: inline-block;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    font-size: 18px;
 }
 .established{
     font-style: italic;
 }
 hr{
-    height: 3px;
+    height: 2px;
     background-color: brown;
     border-color:brown;
 }
-/* .dessert{
-    text-align: left;
-    width:75%;
-} 
-You can do this or seperate it by comma with the flavour class*/
+.bottom-line{
+    margin-top:25px;
+}
+/* FOOTER */
+footer{
+    font-size: 14px;
+}
+a{
+    color: black;
+}
